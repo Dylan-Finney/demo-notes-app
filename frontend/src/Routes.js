@@ -14,7 +14,8 @@ import UnauthenticatedRoute from "./components/UnauthenticatedRoute";
 export default function Links() {
   return (
     <Routes>
-        <Route
+      <Route path="/" element={<Home />} />
+      <Route
         path="/login"
         element={
             <UnauthenticatedRoute>
@@ -55,6 +56,7 @@ export default function Links() {
             </AuthenticatedRoute>
         }
         />
+
 
       {
         /* Finally, catch all unmatched routes */
